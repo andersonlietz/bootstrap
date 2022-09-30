@@ -40,31 +40,54 @@
     <p>Descrição do prato</p>
  </div>
 <table class=".table-light">
-<tr class=".table-light">
-            <td>ALIMENTOS</td>
-            <td>PROTEINAS</td>
-            <td>CARBOIDRATOS</td>
-        </tr>
-        <tr class=".table-light">
+    <thead>
+            <th>ALIMENTOS</th>
+            <th>PROTEINAS</th>
+            <th>CARBOIDRATOS</th>
+</thead>
+<tbody>
+        <tr>
             <td>Alimento</td>
             <td>Proteinas</td>
             <td>Carboidratos</td>
         </tr>
-        <tr class=".table-light">
+        <tr>
             <td>Alimento</td>
             <td>Proteinas</td>
             <td>Carboidratos</td>
         </tr>
-        <tr class=".table-light">
+        <tr>
             <td>Alimento</td>
             <td>Proteinas</td>
             <td>Carboidratos</td>
         </tr>
-
+</tbody>
 </table>
 
+<button class="btn btn-primary">
+ <span class="spinner-border spinner-border-sm"></span>
+ Carregando..
+ </button>
 
+<form action="envio.php" class="was-validated">
+<div class="form-group">
+    <label for="cliente">Nome</label>
+    <input type="text" class="form-control" name="cliente">
+    <div class="valid-feedback">Ok</div>
+    <div class="invalid-feedback">Ops, verifique seu nome!</div>
 
+</div>
+<div class="form-group">
+<label for="e-mail">Telefone</label>
+<input type="e-mail" class="form-control" name="e-mail">
+<div class="valid-feedback">Ok</div>
+    <div class="invalid-feedback">Ops, verifique seu nome!</div>
+</div>
+<div class="form-group">
+    <textarea class="form-control" name="pedido"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Enviar</button>
+</form>
 
      </div>
 </body>
